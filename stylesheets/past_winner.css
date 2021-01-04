@@ -1,0 +1,90 @@
+
+.pw_contain {
+    margin: 60px 0;
+}
+
+.pw_h {
+    text-align: center;
+}
+
+.pw_h h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 2px 2px #d0d0d0;
+}
+
+.pw_h h1::after {
+    content: url('../images/pattern.png');
+    display: block;
+    margin-bottom: 20px;
+}
+
+.past_winner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.p_winner {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 380px 1fr;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: all 200ms ease-in-out;
+}
+
+.p_winner:hover {
+    box-shadow: 8px 8px 7px 0px rgba(214,214,214,1);
+}
+
+.p_winner img {
+    width: 100%;
+    height: 100%;
+}
+
+.pw_info h5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.pw_info p {
+    font-size: 1.2rem;
+}
+
+
+
+/**********************
+    Responsive 
+***********************/
+
+@media screen and (min-width:360px) and (max-width:600px) {
+
+    .past_winner {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .pw_info h5 {
+        margin-bottom: 5px;
+    }
+
+    .past_winner {
+        /*margin: 40px 0;*/
+    }
+
+    .pw_contain {
+    margin: 40px 0;
+    }
+
+    .pw_h h1::after {
+        margin-bottom: 0px;
+    }
+
+}
+

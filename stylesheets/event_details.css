@@ -1,0 +1,404 @@
+
+/**************************************
+            Winner
+***************************************/
+
+.winner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 340px;
+    grid-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 90px 0;  
+}
+
+.winner img {
+    width: 100%;
+    height: 100%;
+}
+
+.stadium {
+    box-shadow: -15px 15px 5px 0px rgba(194,194,194,0.8);
+}
+
+.world {
+    box-shadow: 15px 15px 5px 0px rgba(194,194,194,0.8);
+}
+
+.winner_info h1 {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.winner_info p {
+    line-height: 1.7;
+    text-align: justify;
+    font-weight: 400;
+    color: #656565;
+}
+
+.color {
+    background-color: #1d1d1d;
+}
+
+
+/**************************************
+           Hosted_by
+***************************************/ 
+
+.hosted_by {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.host {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.actor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.actor img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 0px;
+}
+
+.hosted_by h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 2px 2px #d0d0d0;
+}
+
+.hosted_by h1::after {
+    content: url('../images/pattern.png');
+    display: block;
+    margin-bottom: 20px;
+}
+
+.actor h5 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.actor p {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+
+/******************************** 
+        schedule 
+********************************/
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.schedule h2 {
+    font-size: 3rem; 
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 2px 2px #d0d0d0;
+}
+
+.schedule h2::after {
+    content: url('../images/pattern.png');
+    display: block;
+    margin-bottom: 20px;
+}
+
+.timing {
+    width: 100%;
+}
+
+.timing ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.timing ul li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.timing ul li:nth-child(odd) {
+    background-color: #f7f6fa;
+}
+
+.timing ul li:nth-child(even) {
+    background-color: #f1eff7;
+}
+
+.timing ul > * {
+    border-top: 1px solid #e0dee9;
+
+}
+
+.timing ul li:nth-child(5) {
+    border-bottom: 1px solid #e0dee9;
+}
+
+.timing ul li h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.timing ul li h6 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.timing ul li p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.S_info {
+    max-width: 760px; 
+}
+
+sup {
+    font-size: 0.7rem;
+    margin-left: 2px;
+}
+
+/* .day {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%; 
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+}
+
+.day_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30.3333%;
+    background-color: #f7f7f7; 
+    /* background-color: #c36060; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 7px 0px rgba(214,214,214,1);
+}
+
+.hg {
+    height: 360px;
+}
+
+.day_1 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.day_1 ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.day_1 ul li h5 {
+    font-size: 1.1rem;
+}
+
+.day_1 ul li p {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.day_1 ul li span {
+    font-weight: 400;
+} */
+
+/******************************** 
+        Responsive
+********************************/
+
+@media screen and (min-width:1920px) and (max-width:2000px) {
+
+    .hosted_by h1::before {
+        font-size: 3.5rem;
+        top: -9px;
+        left: 280px;
+    }
+
+    .schedule h2::before {
+        top: -14px;
+        font-weight: 900;
+    }
+
+    .schedule h2::before {
+        left: 502px;
+    }
+
+    .timing {
+        width: 100%;
+    }
+
+    .timing ul {
+        width: 100%;
+    }
+
+    .timing ul li {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width:360px) and (max-width:600px) {
+
+    .schedule {
+        margin-bottom: 60px;
+    }
+
+    .schedule h2 {
+        font-size: 2.4rem;
+    }
+
+    .timing ul {
+        width: 100%;
+    }
+
+    .timing ul li h6 {
+        font-size: 1.2rem;
+    }
+
+    .timing ul li p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+    .timing ul li h5 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+    
+    /* .information {
+        flex-direction: column;
+    }
+    
+    .day_1 {
+        margin-top: 20px;
+        width: 90%;
+    } */
+    
+    .schedule {
+        height: auto;
+    }
+    
+    .winner {
+        grid-template-columns: 1fr;
+        margin: 0px 0 60px 0;
+        grid-gap: 20px;
+        padding: 20px;
+        grid-template-rows: auto;
+    }
+
+    .world {
+        box-shadow: 10px 8px 5px 0px rgba(194,194,194,1);
+    }
+
+    .stadium {
+        box-shadow: -10px 8px 5px 0px rgba(194,194,194,1);
+    }
+
+    .winner img {
+        order: -1;
+        height: 240px;
+    }
+
+    .winner_info h1 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+
+    .winner_info p {
+        line-height: 1.7;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+
+    .hosted_by h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+
+    .host {
+        flex-direction: column;
+    }
+
+    .timing ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    sup {
+        font-size: 0.9rem;
+        margin-left: 2px;
+    }
+
+
+
+
+}

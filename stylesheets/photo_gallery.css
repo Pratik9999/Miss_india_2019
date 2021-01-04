@@ -1,0 +1,196 @@
+
+.pg_contain {
+    margin: 60px 0;
+} 
+
+.pg_h h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 3px 2px 2px #d0d0d0;
+}
+
+.pg_h h1::after {
+    content: url('../images/pattern.png');
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.main_photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 400px;
+    grid-gap: 10px;
+
+}
+
+.main_photos img {
+    width: 100%;
+    height: 100%;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.main_photos img:hover {
+    transform: scale(0.98);
+}
+
+.p1 {
+    grid-column: span 2;
+}
+
+.p2 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+.p3 {
+    grid-column: span 2;
+}
+
+.p4 {
+    grid-column: span 2;
+}
+
+.p5 {
+    grid-column: span 2;
+}
+
+.p6 {
+    grid-column: span 3;
+    grid-row: 5;
+}
+
+.p7 {
+    grid-column: 3 / 6;
+    grid-row: 2;
+}
+
+.p8 {
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+.p9 {
+    grid-column: span 2;
+}
+
+.p10 {
+    grid-row: 4;
+    grid-column: 3 / 6;
+}
+
+.p12 {
+    grid-column: 4 / 6;
+    grid-row: 4;
+    display: none;
+}
+
+.p13 {
+    grid-column: span 2;
+}
+
+.p14 {
+    grid-column: span 3;
+}
+
+.p15 {
+    grid-column: span 3;
+}
+
+.p16 {
+    grid-column: 4 / 6;
+}
+
+/* Modal */
+
+
+.black_bg {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index: 2;
+
+}
+
+.black_bg i {
+    color: #9c9c9c;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    margin-right: 280px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#img01 {
+    width: 800px; 
+    height: 450px;
+}
+
+
+@media screen and (min-width:360px) and (max-width:600px) {
+
+    .main_photos {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        grid-auto-rows: 320px;
+    }
+
+    .main_photos > * {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+    
+    .p2 {
+        display: none;
+    }
+
+    .p4 {
+        display: none;
+    }
+
+    .p7 {
+        display: none;
+    }
+
+    .p8 {
+        display: none;
+    }
+
+    .p12 {
+        display: none;
+    }
+
+    .p14 {
+        display: none;
+    }
+
+    .parent {
+        display: none;
+    }
+
+
+    .pg_contain {
+        margin: 40px 0;
+    }
+
+    .pg_h h1 {
+        font-size: 2.2rem;
+    }
+
+
+
+}
+

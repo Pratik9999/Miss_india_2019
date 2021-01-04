@@ -1,0 +1,125 @@
+
+.registered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: all 200ms ease-in;
+    animation-name: notification;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+}
+
+.register {
+    background-color: #d65187;
+}
+
+@keyframes notification  {
+    0%  {
+        transform: scale(0);
+    }
+
+    100%  {
+        transform: scale(1);
+    }
+}
+ 
+.registered > * {
+    margin-bottom: 20px;
+}
+
+.register img {
+    width: 98px;
+    height: auto;
+}
+
+.registered h1 {
+    font-size: 1.5rem;
+    color: #e8e8e8;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.registered p {
+    font-size: 1rem;
+    color: #e8e8e8;
+    text-align: center;
+}
+
+.registered a {
+    width: 180px;
+    background-color: #bb4877;
+    height: 55px;
+    text-align: center;
+    line-height: 3;
+    color: #e8e8e8;
+    font-weight: 500;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 100ms ease-in;
+}
+
+.registered a i {
+    color: #e8e8e8;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+.registered a h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.register {
+    margin-bottom: 0px;
+}
+
+.container-register {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width:360px) and (max-width:600px) {
+
+    .container-register {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .registered h1 {
+        font-size: 1.1rem;
+    }
+
+    .registered p {
+        font-size: 0.8rem;
+    }
+
+    .registered a h6 {
+        font-size: 0.8rem;
+    }
+
+    .registered a i {
+        font-size: 0.8rem;
+    }
+
+    .registered a {
+        width: 180px;
+        height: 48px;
+        padding: 5px;
+    }
+
+    .register img {
+        width: 75px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+
+
+
+}
